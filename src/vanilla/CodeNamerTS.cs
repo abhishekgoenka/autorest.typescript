@@ -44,7 +44,7 @@ namespace AutoRest.TypeScript
 
         public override string GetFieldName(string name) => CamelCase(name);
 
-        public override string GetPropertyName(string name) => CamelCase(RemoveInvalidCharacters(name));
+        public override string GetPropertyName(string name) => RemoveInvalidCharacters(name);
 
         public override string GetMethodName(string name) => CamelCase(GetEscapedReservedName(name, "Method"));
 
